@@ -1,0 +1,52 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "demo"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ViewAbility",
+      "value": "entry_ViewAbility"
+    },
+    {
+      "name": "viewability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "viewability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_TestAbility",
+      "value": "entry_TestAbility"
+    },
+    {
+      "name": "testability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "testability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_WebAbility",
+      "value": "entry_WebAbility"
+    },
+    {
+      "name": "webability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "webability_HelloWorld",
+      "value": "Hello World"
+    }
+  ]
+}

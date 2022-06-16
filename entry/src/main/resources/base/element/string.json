@@ -1,0 +1,76 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "demo"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "viewability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "view_widget",
+      "value": "widget"
+    },
+    {
+      "name": "entry_ViewAbility",
+      "value": "entry_ViewAbility"
+    },
+    {
+      "name": "confirm",
+      "value": "confirm"
+    },
+    {
+      "name": "name",
+      "value": "chenru"
+    },
+    {
+      "name": "common_dialog",
+      "value": "common dialog"
+    },
+    {
+      "name": "list_dialog",
+      "value": "list dialog"
+    },
+    {
+      "name": "multiselect_dialog",
+      "value": "multiselect dialog"
+    },
+    {
+      "name": "custom_dialog",
+      "value": "custom dialog"
+    },
+    {
+      "name": "testability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "testability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_TestAbility",
+      "value": "entry_TestAbility"
+    },
+    {
+      "name": "webability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "webability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_WebAbility",
+      "value": "entry_WebAbility"
+    }
+  ]
+}

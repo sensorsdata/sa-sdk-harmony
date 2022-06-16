@@ -1,0 +1,92 @@
+apply plugin: 'maven-publish'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+def DEFAULT_POM_NAME = 'SensorsAnalyticsSDK'
+def DEFAULT_POM_VERSION = '1.0.0'  //har包版本信息
+def DEFAULT_POM_ARTIFACT_ID = "SensorsAnalyticsSDK"  //har包ID
+def DEFAULT_POM_GROUP_ID = 'com.sensorsdata.analytics.harmony'  //项目组ID
+def DEFAULT_POM_PACKAGING = 'har'  //包类型，固定为har
+def DEFAULT_POM_DESCRIPTION = 'The official Harmony SDK for Sensors Analytics.'
+
+def LOCAL_MAVEN_REPOSITORY_URL = '../repo'  //本地Maven仓地址
+def REMOTE_MAVEN_REPOSITORY_URL = 'https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/'  //远程Maven仓地址
+//申请maven中央仓库参考：https://www.modb.pro/db/54557
+//仓库配置参考：https://central.sonatype.org/publish/publish-gradle/
+//上传成功后：https://s01.oss.sonatype.org/#stagingRepositories
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            group = DEFAULT_POM_GROUP_ID
+            artifactId = DEFAULT_POM_ARTIFACT_ID
+            version = DEFAULT_POM_VERSION
+            pom {
+                group = DEFAULT_POM_GROUP_ID
+                artifactId = DEFAULT_POM_ARTIFACT_ID
+                version = DEFAULT_POM_VERSION
+                url = DEFAULT_POM_DESCRIPTION
+                description = DEFAULT_POM_DESCRIPTION
+                packaging = DEFAULT_POM_PACKAGING
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'dengshiwei'
+                        name = 'dengshiwei'
+                        email = 'dengshiwei@sensorsdata.com'
+                    }
+                }
+                scm {
+                    connection = 'https://github.com/sensorsdata/sa-sdk-harmony'
+                    developerConnection = 'https://github.com/sensorsdata/sa-sdk-harmony.git'
+                    url = 'https://github.com/sensorsdata/sa-sdk-harmony'
+                }
+            }
+        }
+    }
+
+    repositories {
+        Properties properties = new Properties()
+        properties.load(project.rootProject.file('local.properties').newDataInputStream())
+        def mavenUser = properties.getProperty("maven.user")
+        def mavenPassword = properties.getProperty("maven.password")
+        maven {
+            //发布到本地仓库
+//            url = LOCAL_MAVEN_REPOSITORY_URL
+            //发布到远程Maven仓的地址以及Maven仓的帐号和密码
+            url = REMOTE_MAVEN_REPOSITORY_URL
+            credentials {
+                username mavenUser
+                password mavenPassword
+            }
+        }
+    }
+}
+signing {//秘钥配置请看：gradle.properties
+    sign publishing.publications.maven
+}
+
+afterEvaluate { project ->
+    DEFAULT_POM_ARTIFACT_ID = project.name
+    publishing {
+        publications {
+            maven(MavenPublication) {
+                from components.release  //指定发布的har包类型为debug或release
+                group = DEFAULT_POM_GROUP_ID
+                artifactId = DEFAULT_POM_ARTIFACT_ID
+                version = DEFAULT_POM_VERSION
+                pom {
+                    name = DEFAULT_POM_NAME
+                    description = DEFAULT_POM_DESCRIPTION
+                    packaging = DEFAULT_POM_PACKAGING
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "Strings": {
+    "setServerUrl": "setServerUrl",
+    "getServerUrl": "getServerUrl",
+    "trackAppInstall": "trackAppInstall",
+    "track": "track",
+    "track2": "track 带自定义属性"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "colorIntervalRightButton",
+      "value": "#1E90FF"
+    },
+    {
+      "name": "colorTabTextSelection",
+      "value": "#254ff7"
+    },
+    {
+      "name": "colorTabTextNormal",
+      "value": "#ffffff"
+    },
+    {
+      "name": "colorBottomTabTextOn",
+      "value": "#254FF7"
+    },
+    {
+      "name": "colorBottomTabTextOff",
+      "value": "#77000000"
+    }
+  ]
+}

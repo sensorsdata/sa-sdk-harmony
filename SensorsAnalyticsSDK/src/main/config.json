@@ -1,0 +1,33 @@
+{
+  "app": {
+    "bundleName": "com.sensorsdata.analytics.harmony.sdk",
+    "vendor": "sensorsdata",
+    "version": {
+      "code": 1,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.sensorsdata.analytics.harmony.sdk",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable",
+      "car"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "SensorsAnalyticsSDK",
+      "moduleType": "har"
+    },
+    "abilities": [
+      {
+        "name": "com.sensorsdata.analytics.harmony.sdk.core.database.provider.SensorsDataProvider",
+        "type": "data",
+        "uri": "dataability://com.sensorsdata.analytics.harmony.demo.SensorsDataProvider"
+      }
+    ]
+  }
+}

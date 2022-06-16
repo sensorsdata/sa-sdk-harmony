@@ -1,0 +1,130 @@
+<!--
+ Copyright (c) 2021 Huawei Device Co., Ltd.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<div class="container">
+            <!--FA & PA-->
+            <div class="divAli">
+
+                <div class="button-controller">
+                    <button class="btn3" onclick="setServerUrl" value="setServerUrl"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getServerUrl" value="getServerUrl"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="trackAppInstall" value="trackAppInstall"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="track" value="track"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="enableNetworkRequest" value="enableNetworkRequest"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="setFlushNetworkPolicy" value="setFlushNetworkPolicy"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getDistinctId" value="getDistinctId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="resetAnonymousId" value="resetAnonymousId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getAnonymousId" value="getAnonymousId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getLoginId" value="getLoginId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="identify" value="identify"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="login" value="login"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="logout" value="logout"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="trackTimerStart" value="trackTimerStart"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="trackTimerPause" value="trackTimerPause"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="trackTimerResume" value="trackTimerResume"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="trackTimerEnd" value="trackTimerEnd"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="clearTrackTimer" value="clearTrackTimer"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="removeTimer" value="removeTimer"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="flush" value="flush"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="deleteAll" value="deleteAll"></button>
+                </div>
+
+                <div class="button-controller">
+                    <button class="btn3" onclick="registerSuperProperties" value="registerSuperProperties"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getSuperProperties" value="getSuperProperties"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="unregisterSuperProperty" value="unregisterSuperProperty"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="clearSuperProperties" value="clearSuperProperties"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileSet" value="profileSet"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileSetOnce" value="profileSetOnce"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileIncrement" value="profileIncrement"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileAppend" value="profileAppend"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileUnset" value="profileUnset"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileDelete" value="profileDelete"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profilePushId" value="profilePushId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="profileUnsetPushId" value="profileUnsetPushId"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="itemSet" value="itemSet"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="itemDelete" value="itemDelete"></button>
+                </div>
+                <div class="button-controller">
+                    <button class="btn3" onclick="getPresetProperties" value="getPresetProperties"></button>
+                </div>
+            </div>
+</div>

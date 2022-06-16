@@ -1,0 +1,103 @@
+{
+  "app": {
+    "bundleName": "com.sensorsdata.analytics.harmony.demo",
+    "vendor": "sensorsdata",
+    "version": {
+      "code": 1000001,
+      "name": "1.0.1"
+    }
+  },
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
+  "module": {
+    "package": "com.sensorsdata.analytics.harmony.demo",
+    "name": "com.sensorsdata.analytics.harmony.demo.MyApplication",
+    "mainAbility": "com.sensorsdata.analytics.harmony.demo.MainAbility",
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC"
+      }
+    ],
+    "deviceType": [
+      "phone","wearable","tv","car","tablet"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "description": "{bundleName}",
+        "name": "com.sensorsdata.analytics.harmony.demo.MainAbility",
+        "icon": "$media:icon",
+        "label": "$string:confirm",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [],
+        "orientation": "unspecified",
+        "description": "{bundleName}",
+        "name": "com.sensorsdata.analytics.harmony.demo.JSAbility",
+        "icon": "$media:icon",
+        "label": "$string:common_dialog",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": ".ServiceAbility",
+        "type": "service",
+        "visible": true,
+        "process": "com.cr.chenru.service"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.sensorsdata.analytics.harmony.demo.WebAbility",
+        "icon": "$media:icon",
+        "description": "$string:webability_description",
+        "label": "$string:entry_WebAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}

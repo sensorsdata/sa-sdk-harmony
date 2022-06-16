@@ -1,0 +1,32 @@
+{
+  "float": [
+    {
+      "name": "heightBottomTab",
+      "value": "56vp"
+    },
+    {
+      "name": "bottom_nav_bar_height",
+      "value": "56vp"
+    },
+    {
+      "name": "heightTab",
+      "value": "24vp"
+    },
+    {
+      "name": "widthTab",
+      "value": "24vp"
+    },
+    {
+      "name": "textSizeTab",
+      "value": "10fp"
+    },
+    {
+      "name": "defaultPaddingStart",
+      "value": "26dp"
+    },
+    {
+      "name": "defaultPaddingEnd",
+      "value": "24dp"
+    }
+  ]
+}
